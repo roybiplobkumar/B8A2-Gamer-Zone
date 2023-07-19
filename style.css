@@ -50,6 +50,13 @@ nav {
   align-items: center;
   gap: 1rem;
 }
+.flow_us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 262px;
+}
+
 .g_style {
   color: #f948b2;
 }
@@ -218,7 +225,7 @@ nav {
 
 /* ************************Online Games Funny Videos ************* */
 
-.container{
+.container {
   margin: 5rem 0;
 }
 .section-content {
@@ -237,7 +244,7 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.video_content a{
+.video_content a {
   text-decoration: none;
 }
 .section-content p {
@@ -429,10 +436,12 @@ footer a {
   main {
     padding: 0.5rem 3rem;
   }
-  .band_lego,
   nav,
   ul {
     flex-direction: column;
+  }
+  .band_lego {
+    justify-content: center;
   }
   .banner_section {
     flex-direction: column-reverse;
@@ -492,17 +501,17 @@ footer a {
   .footer_details {
     font-size: 0.1px;
   }
-  .section-content h2{
+  .section-content h2 {
     font-size: 1.5rem;
   }
-  .game-overview-container{
+  .game-overview-container {
     flex-direction: column;
     text-align: center;
   }
   .overview-title {
     font-size: 1.5rem;
   }
-  .over-view-description{
+  .over-view-description {
     margin: 2rem 0;
   }
 }
