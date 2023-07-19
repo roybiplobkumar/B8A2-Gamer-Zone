@@ -147,6 +147,9 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.we_are_gamer_img img{
+    width: 100%;
+}
 .gamer_title {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
@@ -178,7 +181,7 @@ nav {
 
 /* responsive for small devices */
 @media screen and (max-width: 576px) {
-  header {
+  header,main {
     padding: 0.5rem 3rem;
   }
   .band_lego,
@@ -199,5 +202,16 @@ nav {
   }
   .banner_img_container img {
     margin: 2rem 0;
+  }
+
+  .we_are_gamer_container{
+    flex-direction: column;
+   
+  }
+  .we_are_gamer_discription{
+    text-align: center;
+  }
+  .gamer_title{
+    font-size: 30px;
   }
 }
