@@ -39,6 +39,9 @@ nav {
   align-items: center;
   gap: 1rem;
 }
+.g_style{
+    color: #f948b2;
+}
 .band_lego img {
   width: 5rem;
   height: 3rem;
@@ -116,4 +119,43 @@ nav {
     border: none;
     margin-top: 2.8rem;
 }
+.banner_img_container img{
+    width: 100%;
+}
 /* banner_section css style  end */
+
+
+
+
+
+
+
+
+
+
+/* ************************************ */
+
+/* responsive for small devices */
+@media screen and (max-width:576px) {
+   header{
+    padding: 0.5rem 3rem;
+   }
+   .band_lego, nav,ul{
+        flex-direction: column;
+       
+    }
+    .banner_section{
+        flex-direction: column-reverse;
+    }
+    .btn{
+        display: flex;
+        justify-content: space-around;
+    }
+    .log_btn,.Rog_btn{
+        padding:16px 20px ;
+
+    }
+    .banner_img_container img{
+        margin: 2rem 0;
+    }
+}
