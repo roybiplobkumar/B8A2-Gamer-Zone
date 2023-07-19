@@ -147,15 +147,15 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.we_are_gamer_img img{
-    width: 100%;
+.we_are_gamer_img img {
+  width: 100%;
 }
 .gamer_title {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .we_are_gamer_discription {
   text-align: right;
@@ -177,11 +177,50 @@ nav {
 }
 /* ******************we_are_gamer_container css style end ********* */
 
+/* ---------------------game_available_container css style start ----------- */
+.game_available_container {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.card img {
+}
+.card_box1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 6rem 0;
+  height: 5rem;
+}
+.card_box2 {
+  display: flex;
+  justify-content: space-around;
+  height: 5rem;
+}
+.card {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.card:hover {
+  border: 1px solid red;
+  border-radius: 50px;
+  background: #fff;
+  color: red;
+}
+.small_device_game_available{
+  display: none;
+}
+/* ---------------------game_available_container css style end ----------- */
+
 /* ************************************ */
 
 /* responsive for small devices */
 @media screen and (max-width: 576px) {
-  header,main {
+  header,
+  main {
     padding: 0.5rem 3rem;
   }
   .band_lego,
@@ -204,14 +243,35 @@ nav {
     margin: 2rem 0;
   }
 
-  .we_are_gamer_container{
+  .we_are_gamer_container {
     flex-direction: column;
-   
   }
-  .we_are_gamer_discription{
+  .we_are_gamer_discription {
     text-align: center;
   }
-  .gamer_title{
+  .gamer_title {
     font-size: 30px;
+  }
+  .game_available_container {
+    display: flex;
+  }
+  .game_available_container{
+    display:none;
+  }
+  
+  .small_device_game_available{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    justify-content: space-between;
+  }
+  .card img{
+    width: 50%;
+  }
+  .card:hover{
+    color:red;
+  }
+  .card p{
+    font-size: 0.5rem;
   }
 }
