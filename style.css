@@ -210,10 +210,70 @@ nav {
   background: #fff;
   color: red;
 }
-.small_device_game_available{
+.small_device_game_available {
   display: none;
 }
 /* ---------------------game_available_container css style end ----------- */
+
+/* *********************footer css style **************** */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+
+  background: #0B0223;
+}
+.footer_lago {
+  justify-content: center;
+}
+.footer_lago h3 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer_container {
+  width: 40%;
+}
+.footer_details {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin: 40px 0;
+}
+.footer_sociallink {
+  display: flex;
+  justify-content: center;
+}
+.footer_sociallink a {
+  width: 80px;
+  height: 80px;
+}
+.footer_team_condition {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.footer_team_condition a {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer_copy_right {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+/* *********************footer css style  end **************** */
 
 /* ************************************ */
 
@@ -255,23 +315,23 @@ nav {
   .game_available_container {
     display: flex;
   }
-  .game_available_container{
-    display:none;
+  .game_available_container {
+    display: none;
   }
-  
-  .small_device_game_available{
-    display:grid;
+
+  .small_device_game_available {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+
     justify-content: space-between;
   }
-  .card img{
+  .card img {
     width: 50%;
   }
-  .card:hover{
-    color:red;
+  .card:hover {
+    color: red;
   }
-  .card p{
+  .card p {
     font-size: 0.5rem;
   }
 }
