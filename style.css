@@ -18,11 +18,21 @@ header {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
+  margin: 2rem 0;
 }
 
 .primary_title {
   font-size: 48px;
   font-weight: 700;
+}
+.primary_discription {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+main {
+  padding: 2rem 15rem;
 }
 /* *************** shared css style end ********* */
 
@@ -39,8 +49,8 @@ nav {
   align-items: center;
   gap: 1rem;
 }
-.g_style{
-    color: #f948b2;
+.g_style {
+  color: #f948b2;
 }
 .band_lego img {
   width: 5rem;
@@ -107,55 +117,87 @@ nav {
 
 .log_btn {
   border-radius: 48px;
-  background:  linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
   padding: 1.2rem 2.8rem;
   border: none;
   margin-top: 2.8rem;
 }
-.Rog_btn{
-    border-radius: 48px;
-    background: #4EC5F7;
-    padding: 1.2rem 2.8rem;
-    border: none;
-    margin-top: 2.8rem;
+.Rog_btn {
+  border-radius: 48px;
+  background: #4ec5f7;
+  padding: 1.2rem 2.8rem;
+  border: none;
+  margin-top: 2.8rem;
 }
-.banner_img_container img{
-    width: 100%;
+.banner_img_container img {
+  width: 100%;
 }
 /* banner_section css style  end */
 
-
-
-
-
-
-
-
-
+/* ******************we_are_gamer_container css style ********* */
+.we_are {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.we_are_gamer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gamer_title {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ margin-bottom: 2rem;
+}
+.we_are_gamer_discription {
+  text-align: right;
+}
+.we_are_gamer_btn {
+  padding: 21px 40px;
+  border: none;
+  border-radius: 48px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+.we_are_gamer_discription h3 {
+  color: #534c64;
+  line-height: 45px; /* 187.5% */
+}
+.unleash {
+  font-size: 24px;
+  font-weight: 500;
+  color: #0b0223;
+}
+/* ******************we_are_gamer_container css style end ********* */
 
 /* ************************************ */
 
 /* responsive for small devices */
-@media screen and (max-width:576px) {
-   header{
+@media screen and (max-width: 576px) {
+  header {
     padding: 0.5rem 3rem;
-   }
-   .band_lego, nav,ul{
-        flex-direction: column;
-       
-    }
-    .banner_section{
-        flex-direction: column-reverse;
-    }
-    .btn{
-        display: flex;
-        justify-content: space-around;
-    }
-    .log_btn,.Rog_btn{
-        padding:16px 20px ;
-
-    }
-    .banner_img_container img{
-        margin: 2rem 0;
-    }
+  }
+  .band_lego,
+  nav,
+  ul {
+    flex-direction: column;
+  }
+  .banner_section {
+    flex-direction: column-reverse;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-around;
+  }
+  .log_btn,
+  .Rog_btn {
+    padding: 16px 20px;
+  }
+  .banner_img_container img {
+    margin: 2rem 0;
+  }
 }
