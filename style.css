@@ -19,6 +19,7 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   margin: 2rem 0;
+  cursor: pointer;
 }
 
 .primary_title {
@@ -326,12 +327,26 @@ footer a {
     justify-content: space-between;
   }
   .card img {
-    width: 50%;
+    width: 40%;
   }
   .card:hover {
     color: red;
   }
   .card p {
     font-size: 0.5rem;
+  }
+
+  .footer_container{
+    width: 70%;
+  }
+  .footer_details{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+  }
+  .footer_details{
+    font-size: 0.1px;
   }
 }
